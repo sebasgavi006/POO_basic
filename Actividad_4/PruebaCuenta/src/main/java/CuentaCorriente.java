@@ -45,12 +45,13 @@ public void consignar(float cantidad) {
     if (sobregiro > 0) {
         if ( residuo > 0) { /* Si el residuo es mayor que cero, se libera
         el sobregiro */
-        sobregiro = 0;
-        saldo = residuo;
-        } else { /* Si el residuo es menor que cero, el saldo es cero y
+            sobregiro = 0;
+            saldo = residuo;
+        }
+        else { /* Si el residuo es menor que cero, el saldo es cero y
         surge un sobregiro */
-        sobregiro = -residuo;
-        saldo = 0;
+            sobregiro = -residuo;
+            saldo = 0;
         }
     } 
     else {
